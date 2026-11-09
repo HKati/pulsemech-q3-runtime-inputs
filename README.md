@@ -57,30 +57,46 @@ identifier, not the download endpoint for this proposed delivery.
 | Asset | Count | Bytes |
 | --- | ---: | ---: |
 | `q2-runtime-preparation-37148637546-1.zip.001` through `.020` | 20 | 508460811 total |
-| `Q3_RUNTIME_RESZEK.json` | 1 | 7014 |
-| `Q3_RUNTIME_SOURCE_NOTICE_COMPANION_v1.zip` | 1 | 30470832 |
+| `Q3_RUNTIME_PARTS.json` | 1 | 7014 |
+| `Q3_RUNTIME_SOURCE_NOTICE_COMPANION_v2.zip` | 1 | 30532275 |
 | `gcc-8.5.0-26.el8_10.alma.1.src.rpm` | 1 | 65714006 |
 | `gcc-libraries-8.3.1-2.1.1.el7.src.rpm` | 1 | 137336608 |
 | `gcc-4.8.5-44.el7.src.rpm` | 1 | 79314655 |
 
-The planned set is **25 uploaded assets, totaling 821303926 bytes**.
+The planned set is **25 uploaded assets, totaling 821365369 bytes**.
 The complete original runtime ZIP is reconstructed from the twenty fragments;
 it is not an additional attachment in this plan.
 
 The original split manifest records each part's filename, order, size and hash.
 Its exact copy is retained inside the companion at
-`baseline/Q3_RUNTIME_RESZEK.json`.
+`baseline/Q3_RUNTIME_PARTS.json`.
 
 | Non-fragment asset | SHA-256 |
 | --- | --- |
-| `Q3_RUNTIME_RESZEK.json` | `67eff809f8cf000f82b8365f1fc535ca82ffea167e2834488166915454c87f37` |
-| `Q3_RUNTIME_SOURCE_NOTICE_COMPANION_v1.zip` | `7a72828947d276060b28b3668ad6a569771aefe837e8c50f94833c6f4f2ff54c` |
+| `Q3_RUNTIME_PARTS.json` | `67eff809f8cf000f82b8365f1fc535ca82ffea167e2834488166915454c87f37` |
+| `Q3_RUNTIME_SOURCE_NOTICE_COMPANION_v2.zip` | `cae9424e62696704db0d543c646f8ebb600d0650bbc260c80cc2207f76a40611` |
 | `gcc-8.5.0-26.el8_10.alma.1.src.rpm` | `0911864c260a75ae030f3144616e7e5e1359e04ce1c9730ab83906486e3bc79f` |
 | `gcc-libraries-8.3.1-2.1.1.el7.src.rpm` | `cf2a1d2c2e5a56eb2e495c2638e64769b73db07555e1f7ce34cbd9feff6891f5` |
 | `gcc-4.8.5-44.el7.src.rpm` | `642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36` |
 
 The companion and three complete source RPMs are distinct files. The full
 source RPMs are not included inside the companion ZIP.
+
+### English publication names
+
+Release attachment names and the reader guide use English. The split manifest
+is published as `Q3_RUNTIME_PARTS.json`; its 7014 bytes and recorded SHA-256 are
+unchanged. The version-2 companion supplies an English `README.md` and uses
+`baseline/Q3_RUNTIME_PARTS.json` for that exact retained manifest.
+
+The companion's `ENGLISH_EDITION.json` records the original edition's identity
+and the exact adaptation. `PACKAGING_CHECK.json` and `FILE_MANIFEST.json`
+describe version 2. The original inventory is retained as
+`history/FILE_MANIFEST_v1.json`. Existing source archives, legal notices,
+inspection results, and historical scripts retain their original bytes.
+Historical filenames in those records identify prior artifacts; they are not
+the current publication names. The source records linked below describe the
+original preparation and do not claim that version 2 reran those inspections.
 
 ## Integrity and use
 
